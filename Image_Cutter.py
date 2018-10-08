@@ -63,6 +63,7 @@ def cut_image(line):
                         img[y:y+h, x:x+w])
 
 
+
 if __name__ == '__main__':
     print("Parent process {}".format(os.getpid()))
     p = multiprocessing.Pool(24)
