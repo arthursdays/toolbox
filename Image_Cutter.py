@@ -65,7 +65,7 @@ def cut_image(line):
 
 if __name__ == '__main__':
     print("Parent process {}".format(os.getpid()))
-    p = multiprocessing.Pool(12)
+    p = multiprocessing.Pool(24)
 
     for line in file.readlines():
         p.apply_async(cut_image, args=(line, ))
