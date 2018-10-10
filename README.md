@@ -1,2 +1,2 @@
 # toolbox
-Toolbox storing tools used in my research
+Toolbox stores tools used in my research
