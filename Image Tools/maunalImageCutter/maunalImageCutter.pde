@@ -29,7 +29,7 @@ void setup() {
 
   photoName = rawPhotos.get(0);
   aPhoto = loadImage(photoName);
-  frame.setTitle( 0 + " out of " + srcFolder.listFiles().length);
+  surface.setTitle( 0 + " out of " + srcFolder.listFiles().length);
 }
 
 void draw()
@@ -84,7 +84,7 @@ void mouseClicked()
   {
     if (index < srcFolder.listFiles().length)
       index++;
-    frame.setTitle( index + " out of " + srcFolder.listFiles().length);
+    surface.setTitle( index + " out of " + srcFolder.listFiles().length);
     photoName = rawPhotos.get(index);
     aPhoto = loadImage(photoName);
     ratio = 1;
