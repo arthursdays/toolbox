@@ -45,7 +45,6 @@ void draw()
   top = mouseY-windowSize/2;
   bottom = mouseY+windowSize/2;
 
-
   if (bottom >= min(height, dy + yr))
     top = int(min(height, dy + yr)) - windowSize;
   if (right >= min(width, dx + xr))
