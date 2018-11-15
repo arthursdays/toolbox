@@ -35,14 +35,15 @@ def plotandsave(filedir):
     ax2.plot(x, y4, 'r', linewidth=1, label="Val acc")
     ax2.legend(loc=1)
     ax2.set_ylabel("Accuracy")
-    filename = filedir.split('\\')[-1]
+    filename = filedir.split('/')[-1]
     ax1.set_title("Convergence graph of {}".format(filename))
 
     plt.savefig("{}Convergence graph of {}.jpg".format(filedir.split('resnet50')[0], filename))
 
 
 if __name__ == '__main__':
-    filedir = '..\\..\\logs'
+    filedir = '/home/arthur/Skin_Disease_AI_Diagnosis/1_cnn'
     for file in os.listdir(filedir):
-        plotandsave(os.path.join(filedir, file))
+        if(file.endswith('.log')):
+            plotandsave(os.path.join(filedir, file))
 

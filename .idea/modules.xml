@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Skin_Disease_AI_Diagnosis/.idea/Skin_Disease_AI_Diagnosis.iml" filepath="$USER_HOME$/Skin_Disease_AI_Diagnosis/.idea/Skin_Disease_AI_Diagnosis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/toolbox.iml" filepath="$PROJECT_DIR$/.idea/toolbox.iml" />
     </modules>
   </component>
